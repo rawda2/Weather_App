@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="shortcut icon" href="./IMG/logo.png" type="image/png">
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <main class="text-center pb-4 dark" id="main">
+    <div class="head d-flex justify-content-center">
+      <h1>WEATHER APP</h1>
+      <div class="mood mt-3 ms-5">
+        <i class="fa-solid fa-moon px-2" id="modeD"></i>
+        <i class="fa-regular fa-sun px-2" id="modeL"></i>
+      </div>
+    </div>
+
+    <div class="main rounded mx-auto">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <form class="d-flex justify-content-between w-100" role="search">
+            <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" id="searchBtn" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="invalid text-start p-3" id="invalid">
+        <p><i class="fa-regular fa-circle-xmark"></i> Please Enter Valid City Name!</p>
+      </div>
+
+      <div id="valid">
+        <div class="degree" id="degreeDiv">
+          <img src="https://openweathermap.org/img/wn/50n@2x.png" alt="Weather Icon" id="img">
+          <h2 id="degree"></h2>
+          <h4 id="cityName"></h4>
+          <h5 id="date"></h5>
+        </div>
+
+        <div class="details">
+          <div class="row justify-content-between align-items-center px-5">
+            <div class="col-md-6 d-flex">
+              <img src="./IMG/perc.png" alt="Humidity Icon">
+              <div class="caption pt-3 mt-2">
+                <span id="percentage"></span>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <img src="./IMG/air.png" alt="Air Pressure Icon">
+              <div class="caption pt-3 mt-2">
+                <span id="air"></span>
+                <p>Air pressure</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <img src="./IMG/wind.png" alt="Wind Speed Icon">
+              <div class="caption pt-3 mt-2">
+                <span id="wind"></span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btns py-5">
+          <a href="#" id="cel">°C</a>
+          <a href="#" id="feh">°F</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./JS/bootstrap.min.js"></script>
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>

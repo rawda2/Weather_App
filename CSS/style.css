@@ -1,0 +1,121 @@
+:root {
+    --font: "Lora";
+    --bgcolor: #caf0f8;
+    --bgImg: url('../IMG/bg-light.jpeg');
+    --head-color: #e7cbae;
+    --dark: #000;
+    --danger: #c1121f;
+    --icon: #121235;
+}
+
+.dark {
+    --bgcolor: #121238;
+    --bgImg: url('../IMG/bg-dark.jpeg');
+    --dark: #ffffff;
+    --icon: #caf0f8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mood {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+#modeD, #modeL {
+    color: var(--icon);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#modeD {
+    display: none;
+    font-size: 50px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .3) 100%), var(--bgImg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #caf0f8;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.main {
+    width: 50%;
+    background-color: var(--bgcolor);
+}
+
+@media (min-width: 220px) and (max-width: 990px) {
+    .main {
+        width: 90%;
+    }
+
+    h1 {
+        text-align: left;
+        width: 90%;
+    }
+}
+
+.main form .btn {
+    background-color: var(--head-color);
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.main .invalid {
+    display: none;
+}
+
+.main .invalid p {
+    color: var(--danger);
+}
+
+.main .degree img {
+    width: 150px;
+}
+
+.main .degree h2,
+.main .degree h4,
+.main .degree h5,
+.main .details .col-md-6 span,
+.main .details .col-md-6 p {
+    color: var(--dark);
+}
+
+.main .degree h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.main .details .col-md-6 img {
+    width: 100px;
+}
+
+.main .btns a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d2a87d;
+    font-size: 25px;
+    margin-left: -10px;
+}
+
+#feh {
+    background-color: #c1121f;
+}
