@@ -60,7 +60,19 @@ h1 {
     background-color: var(--bgcolor);
 }
 
-@media (min-width: 220px) and (max-width: 990px) {
+@media (min-width: 371px) and (max-width: 990px) {
+    .main {
+        width: 90%;
+    }
+    h1 {
+        text-align: left;
+        width: 80%;
+    }
+    .mood {
+        right: 10px;
+    }
+}
+@media (min-width: 220px) and (max-width: 370px) {
     .main {
         width: 90%;
     }
@@ -68,6 +80,11 @@ h1 {
     h1 {
         text-align: left;
         width: 80%;
+    }
+    .mood {
+        
+        top: 60px;
+        right: 10px;
     }
 }
 
